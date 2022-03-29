@@ -1,0 +1,70 @@
+Request method:	POST
+Request URI:	https://www.almosafer.com/api/enigma/search/async
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=skdjfh73273$7268u2j89s
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "checkIn": "2022-06-12",
+    "checkOut": "2022-05-25",
+    "roomsInfo": [
+        {
+            "adultsCount": 2,
+            "kidsAges": [
+                12,
+                11,
+                9
+            ]
+        }
+    ],
+    "placeId": "ChIJrRnTjtx5_IgRPSii63qm5Sw"
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 29 Mar 2022 15:53:25 GMT
+Content-Type: application/json
+Content-Length: 278
+Connection: keep-alive
+Accept-Ranges: bytes
+APP-ID: 50
+APP-NAME: almosafer.com
+SPAN-ID: 8ea31738e75e651c
+TRACE-ID: 8ea31738e75e651c
+X-GeoIP-City: Amman
+X-GeoIP-Country: Jordan
+X-GeoIP-Country-Code: JO
+X-GeoIP-Region: Amman Governorate
+X-is-Mobile: false
+X-Real-IP: 176.29.38.219
+X-Cache: Error from cloudfront
+Via: 1.1 ef10af6bed26700243bef9cca59e23a2.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: FJR50-C1
+X-Amz-Cf-Id: g_8pzbsSJudzXN0w4La7fHcQM7UxnHpEKPev7XegIXWw0TNEd6hLpw==
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 6f39c73b9b73ac0d-RUH
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "timestamp": "2022-03-29T15:53:25.415+00:00",
+    "path": "/search/async",
+    "status": 400,
+    "error": "Bad Request",
+    "message": null,
+    "requestId": "3270bf8a-1",
+    "traceId": "8ea31738e75e651c",
+    "serviceName": "hotel-core-service",
+    "errorCodes": [
+        "1021",
+        "1025"
+    ],
+    "errorType": "Validation error",
+    "code": 106
+}
